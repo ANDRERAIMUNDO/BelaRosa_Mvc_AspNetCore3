@@ -1,14 +1,15 @@
+using BelaRosa_MVC_AspNetCore3_4.Models.Constant;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
-namespace BelaRosa_MVC_AspNetCore.Models.Entities
+namespace BelaRosa_MVC_AspNetCore3_4.Models.Entities
 {
     public class Colaborador
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage="Nome é campo Obrigatorio.")]
         [MinLength(5,ErrorMessage="Nome de possuir mais de cinco caracter.")]
@@ -33,5 +34,8 @@ namespace BelaRosa_MVC_AspNetCore.Models.Entities
         [Required(ErrorMessage="Senha é campo obrigatotio.")]
         [MinLength(6,ErrorMessage="Minimo permitido seis caracter")]
         public string Senha { get; set; }
+
+        [Required(ErrorMessage="Tipo é campo obrigatotio.")]
+        public string Tipo { get; set; }
     }
 }

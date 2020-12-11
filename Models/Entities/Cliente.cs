@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
-namespace BelaRosa_MVC_AspNetCore.Models.Entities
+namespace BelaRosa_MVC_AspNetCore3_4.Models.Entities
 {
     public class Cliente
     {
